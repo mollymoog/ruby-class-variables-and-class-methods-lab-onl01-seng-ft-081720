@@ -30,8 +30,8 @@ class Song
   end
   
   def self.genre_count
-    if @@genre_count.include?(genre)
-      :genre += 1
+    if @@genres.include?(genre)
+      @@genre_count[genre] += 1
     end
     # @@genre_count[@@genres.uniq] = 
   end 
