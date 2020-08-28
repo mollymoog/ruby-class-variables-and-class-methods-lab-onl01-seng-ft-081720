@@ -30,7 +30,7 @@ class Song
   end
   
   def self.genre_count
-    if @@genres.include?(genre)
+    if @@genres.include?(@genre)
       @@genre_count[genre] += 1
     else
       @@genre_count[genre] = 1
