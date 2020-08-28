@@ -30,12 +30,14 @@ class Song
   end
   
   def self.genre_count
-    if @@genres.include?(@genre)
-      @@genre_count[@genre] += 1
-    else
-      @@genre_count[@genre] = 1
-    end
-binding.pry
+    @@genres.each_with_obj
+    
+    # if @@genres.include?(@genre)
+    #   @@genre_count[@genre] += 1
+    # else
+    #   @@genre_count[@genre] = 1
+    # end
+# binding.pry
 end 
   
   
