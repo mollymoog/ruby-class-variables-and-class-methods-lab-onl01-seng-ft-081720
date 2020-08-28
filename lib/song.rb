@@ -31,15 +31,9 @@ class Song
   
   def self.genre_count
     @@genre_count = @@genres.each_with_object(Hash.new(0)){|g, n| n[g] += 1}
-    
-    # if @@genres.include?(@genre)
-    #   @@genre_count[@genre] += 1
-    # else
-    #   @@genre_count[@genre] = 1
-    # end
-# binding.pry
-end 
+  end 
   
-  
+  def self.artist_count
+    @@artist_count = @@artists.each_with_object(Hash.new(0)){|artist, songs| songs[artist] += 1}
   
 end
